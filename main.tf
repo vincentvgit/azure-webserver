@@ -1,5 +1,5 @@
 resource "azurerm_resource_group" "webserver" {
-   name = "nginx-server"
+   name = "vincent-nginx-server"
    location = var.location
 }
 
@@ -92,8 +92,8 @@ resource "azurerm_linux_virtual_machine" "nginx" {
    }
 
    computer_name = "nginx"
-   admin_username = "adminuser"
-   admin_password = "Faizan@bashir.123"
+   admin_username = "vincent"
+   admin_password = "Azertyuiop123"
    disable_password_authentication = false
 
    os_disk {
